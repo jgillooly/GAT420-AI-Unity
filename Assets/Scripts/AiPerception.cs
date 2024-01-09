@@ -4,15 +4,12 @@ using UnityEngine;
 
 public abstract class AiPerception : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] string tagName = "";
+    [SerializeField] float distance;
+    [SerializeField] float maxAngle = 45;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract GameObject[] GetGameObjects();
+
+
+
 }
